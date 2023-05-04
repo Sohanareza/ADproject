@@ -8,8 +8,8 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alap"
         tools:targetApi="31">
+        <activity
+            android:name=".LoginTest"
+            android:exported="false" />
         <activity
             android:name=".PopDate"
             android:exported="false" />
