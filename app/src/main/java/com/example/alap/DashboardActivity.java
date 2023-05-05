@@ -45,7 +45,7 @@ CardView hadviseCard;
         reminderCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),NoteEditorActivity.class);
+                Intent intent = new Intent(getApplicationContext(),ToDoListMain.class);
                 startActivity(intent);
             }
         });

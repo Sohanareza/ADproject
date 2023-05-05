@@ -23,6 +23,12 @@
         android:theme="@style/Theme.Alap"
         tools:targetApi="31">
         <activity
+            android:name=".ToDoListMain"
+            android:exported="false" />
+        <activity
+            android:name=".TaskMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".DietDetailedActivity"
             android:exported="false" />
         <activity
@@ -54,12 +60,6 @@
             android:exported="false" />
         <activity
             android:name=".MedMainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".NoteEditorActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RemindActivity"
             android:exported="false" />
         <activity
             android:name=".ResultActivity"
