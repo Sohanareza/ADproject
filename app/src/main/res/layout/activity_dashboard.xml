@@ -181,6 +181,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
+                android:id="@+id/hadviseCard"
                 app:cardCornerRadius="20dp">
 
                 <RelativeLayout
@@ -191,16 +192,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/beautyName"
-                        android:text="@string/game"
+                        android:text="Health Advise"
                         android:textSize="20sp"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/gameimg"/>
+                        android:layout_below="@+id/himage"/>
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/gameimg"
+                        android:id="@+id/himage"
+                        android:src="@drawable/seo"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -223,70 +225,41 @@
             app:layout_constraintTop_toBottomOf="@id/row2">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
                 android:id="@+id/testmriCard"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/testimageText"
-                        android:text="Test Image"
-                        android:textSize="20sp"
-                        android:layout_marginTop="10dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/testmriimage"/>
-
-                    <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:id="@+id/testmriimage"
-                        android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:id="@+id/imageclassifyCard"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageText"
-                        android:text="@string/game"
-                        android:textSize="20sp"
-                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/testmriimage"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/testimg"/>
+                        android:layout_marginTop="10dp"
+                        android:text="Test Image"
+                        android:textSize="20sp" />
 
                     <ImageView
+                        android:id="@+id/testmriimage"
                         android:layout_width="70dp"
+                        android:src="@drawable/search"
                         android:layout_height="70dp"
-                        android:id="@+id/testimg"
-                        android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+
+
         </LinearLayout>
 
         <LinearLayout

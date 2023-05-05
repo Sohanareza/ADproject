@@ -10,7 +10,7 @@ import android.view.View;
 
 public class DashboardActivity extends AppCompatActivity {
     CardView medreminderCard;
-
+CardView hadviseCard;
     CardView checkCard;
     CardView reminderCard;
     CardView testmriCard;
@@ -58,14 +58,16 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        imageclassifyCard=findViewById(R.id.imageclassifyCard);
-        imageclassifyCard.setOnClickListener(new View.OnClickListener() {
+
+        hadviseCard=findViewById(R.id.hadviseCard);
+        hadviseCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MedMainActivity.class);
+                Intent intent = new Intent(getApplicationContext(),HealthMaintainMain.class);
                 startActivity(intent);
             }
         });
+
 
 
 

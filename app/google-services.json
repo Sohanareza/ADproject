@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "556455155330",
+    "project_id": "alap-6e4de",
+    "storage_bucket": "alap-6e4de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556455155330:android:034b7089460437cdb5c69b",
+        "android_client_info": {
+          "package_name": "com.example.alap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556455155330-9hjlnu2p86padqksrd8hgje37kgjgkln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQhEtrZeL1TL0ErFXqARzP8H9pEz3xOf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556455155330-9hjlnu2p86padqksrd8hgje37kgjgkln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

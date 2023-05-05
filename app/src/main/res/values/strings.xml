@@ -53,4 +53,25 @@
     <string name="channel_name">Reminder</string>
     <string name="channel_description">App Reminder and Alarm Notificaions</string>
     <string name="reminder">REMINDER</string>
+    //diet
+    <string name="dietmorning">
+        \nDrink one cup of lemon tea
+        \nEat starch(Ruti/Rice)
+    </string>
+
+    //excercise
+    <string name="exmorn">
+        \nWalk minimum 20 minutes at normal speed
+
+    </string>
+
+    //sleep
+    <string name="sleep">
+        \nsleep at least 8 hours if you are 20-40 years old
+        \nsleep at least 8 hourse if you are 10-20 years old
+    </string>
+    <string name="quit">
+        \nquit smoking
+        \nquit alcohol
+    </string>
 </resources>
