@@ -11,56 +11,49 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+
         android:enableOnBackInvokedCallback="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Help Yourself"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alap"
-        tools:targetApi="31">
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
+        tools:targetApi="tiramisu">
+
+
+
+
         <activity
-            android:name=".ToDoListMain"
-            android:exported="false" />
-        <activity
-            android:name=".TaskMainActivity"
-            android:exported="false" />
+            android:name=".NewLoginActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".DietDetailedActivity"
             android:exported="false" />
         <activity
             android:name=".HealthMaintainMain"
             android:exported="false" />
-        <activity
-            android:name=".EditProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity2"
-            android:exported="true" />
-        <activity
-            android:name=".SignUpActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginTest"
-            android:exported="false" />
-        <activity
-            android:name=".PopDate"
-            android:exported="false" />
-        <activity
-            android:name=".MedMainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MedMainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MedMainActivity2"
-            android:exported="false" />
+
+
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
@@ -89,27 +82,29 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".DashboardActivity"
+            android:name=".ImageClassify"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:name=".DashboardActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+        </activity>
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".signup"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
-            android:name=".SignupActivity"
+            android:name=".forgotpassword"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -121,6 +116,30 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+        </activity>
+        <activity
+            android:name=".notesactivity"
+            android:exported="false">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        </activity>
+
+        <activity
+            android:name=".notedetails"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".createnoteactivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
