@@ -113,7 +113,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/remindertext"
-                        android:text="@string/remind_things"
+                        android:text="Notes"
                         android:textSize="20sp"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
@@ -161,7 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/homeName"
-                        android:text="Medicine Reminder"
+                        android:text="Reminder"
                         android:textSize="20sp"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
@@ -171,6 +171,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/medreminderimg"
+                        android:src="@drawable/calendar"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -246,7 +247,7 @@
                         android:layout_below="@+id/testmriimage"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Test Image"
+                        android:text="Check AD Level"
                         android:textSize="20sp" />
 
                     <ImageView
@@ -279,14 +280,14 @@
                         android:layout_below="@+id/imageclassifyimage"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Health Advise"
+                        android:text="Detect Things"
                         android:textSize="20sp" />
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/imageclassifyimage"
-                        android:src="@drawable/seo"
+                        android:src="@drawable/detective"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
