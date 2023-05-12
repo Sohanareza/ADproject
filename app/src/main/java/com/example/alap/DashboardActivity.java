@@ -65,6 +65,14 @@ CardView hadviseCard;
                 startActivity(intent);
             }
         });
+        medreminderCard = findViewById(R.id.medreminderCard);
+        medreminderCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NewAlarmMain.class);
+                startActivity(intent);
+            }
+        });
 
         hadviseCard = findViewById(R.id.hadviseCard);
         hadviseCard.setOnClickListener(new View.OnClickListener() {

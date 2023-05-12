@@ -31,7 +31,6 @@
 
 
 
-
         <activity
             android:name=".NewLoginActivity"
             android:exported="true">
@@ -45,6 +44,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DestinationActivity"/>
+
+        <receiver android:name=".AlarmReceiver"/>
 
         <activity
             android:name=".DietDetailedActivity"
@@ -52,7 +54,13 @@
         <activity
             android:name=".HealthMaintainMain"
             android:exported="false" />
-
+        <activity
+            android:name=".NewAlarmMain"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
 
         <activity
             android:name=".ResultActivity"
