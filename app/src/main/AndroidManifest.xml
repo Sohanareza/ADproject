@@ -11,27 +11,29 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
-
         android:enableOnBackInvokedCallback="true"
-        android:hardwareAccelerated="true"
-        android:largeHeap="true"
         android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/psychology"
         android:label="Help Yourself"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/psychology"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alap"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
         tools:targetApi="tiramisu">
-
-
-
-
+        <activity
+            android:name=".QuitThese"
+            android:exported="false" />
+        <activity
+            android:name=".MaintainMain"
+            android:exported="false" />
+        <activity
+            android:name=".BmiMain"
+            android:exported="false" />
         <activity
             android:name=".NewLoginActivity"
             android:exported="true">
@@ -45,15 +47,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".DietDetailedActivity"
-            android:exported="false" />
         <activity
             android:name=".HealthMaintainMain"
             android:exported="false" />
-
-
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
@@ -95,7 +91,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".signup"
             android:exported="false">
@@ -120,11 +115,10 @@
         <activity
             android:name=".notesactivity"
             android:exported="false">
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
-
         <activity
             android:name=".notedetails"
             android:exported="false"
@@ -137,9 +131,9 @@
             android:name=".createnoteactivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
