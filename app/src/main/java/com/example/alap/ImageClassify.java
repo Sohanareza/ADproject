@@ -33,7 +33,6 @@ public class ImageClassify extends AppCompatActivity {
     Button selectBtn,predictBtn,captureBtn;
     TextView result;
     ImageView imageView;
-
     Bitmap bitmap;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -72,8 +71,6 @@ public class ImageClassify extends AppCompatActivity {
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
                 startActivityForResult(intent,10);
-
-
             }
         });
 

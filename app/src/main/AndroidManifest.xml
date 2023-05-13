@@ -25,6 +25,7 @@
         android:theme="@style/Theme.Alap"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
         tools:targetApi="tiramisu">
+
         <activity
             android:name=".QuitThese"
             android:exported="false" />
@@ -34,6 +35,8 @@
         <activity
             android:name=".BmiMain"
             android:exported="false" />
+
+
         <activity
             android:name=".NewLoginActivity"
             android:exported="true">
@@ -47,9 +50,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".HealthMaintainMain"
             android:exported="false" />
+
+        <activity android:name=".DestinationActivity"/>
+
+        <receiver android:name=".AlarmReceiver"/>
+
+
+      
+        <activity
+            android:name=".NewAlarmMain"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
